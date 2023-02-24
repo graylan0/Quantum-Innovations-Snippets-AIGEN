@@ -4,7 +4,7 @@ Theoretical models and simulations based on quantum mechanics can aid in the dis
 
 Here is an example code snippet for simulating drug candidates using a quantum computer:
 
-python
+```python
 
 import pennylane as qml
 
@@ -27,7 +27,7 @@ qnode = qml.QNode(circuit, dev)
 energy = qml.ExpvalCost(qnode, hamiltonian, optimize=True)
 params = [0.1]
 res = qml.optimize.minimize(energy, params, tol=1e-5)
-print('Minimum energy:', res.fun)
+print('Minimum energy:', res.fun)```
 
 In this example, we define a molecular Hamiltonian for a hydrogen molecule, and then simulate it using a quantum circuit that includes double excitations. We use the PennyLane library to define and optimize the circuit, and calculate the minimum energy of the system as an indicator of its stability.
 
