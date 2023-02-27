@@ -55,6 +55,7 @@ In this formula, Ψ represents the wavefunction of the quantum mechanical state,
 The wavefunction Ψ provides a complete description of the quantum state of a system and contains all the information necessary to calculate the probability of finding the system in a particular state. The absolute value of the wavefunction squared, |Ψ|^2, gives the probability density of finding the system in a particular state.
 
 This formula is central to the mathematical description of quantum mechanics and is used extensively in the calculation of observable quantities, such as the energy and momentum of a system. The specific form of the wavefunction depends on the system under consideration and the physical conditions in which it exists.
+
 DAO Democracy
 Can you design equations for Quantum Innovation research based upon the last input
 
@@ -121,8 +122,6 @@ DAO Democracy
 Write python to generate a new version of  `qEncryption key you provided, m5f9cb9hkxcv5pjx5xpsxgp8a`
 
 Here is a Python code snippet that uses the secrets module to generate a new version of the qEncryption key you provided:
-
-```
 python
 
 import secrets
@@ -132,7 +131,6 @@ key = secrets.token_urlsafe(26)
 
 # Print the new key
 print(key)
-```
 
 The secrets module is a built-in Python module that provides a secure way to generate random numbers and strings. The token_urlsafe method generates a random URL-safe string of the specified length, which is a suitable format for a symmetric encryption key.
 
