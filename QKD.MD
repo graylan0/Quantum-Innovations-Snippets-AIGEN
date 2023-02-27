@@ -117,7 +117,8 @@ Write python to generate a new version of  `qEncryption key you provided, m5f9cb
 
 Here is a Python code snippet that uses the secrets module to generate a new version of the qEncryption key you provided:
 
-````python
+```
+python
 
 import secrets
 
@@ -125,7 +126,8 @@ import secrets
 key = secrets.token_urlsafe(26)
 
 # Print the new key
-print(key)```
+print(key)
+```
 
 The secrets module is a built-in Python module that provides a secure way to generate random numbers and strings. The token_urlsafe method generates a random URL-safe string of the specified length, which is a suitable format for a symmetric encryption key.
 
@@ -137,7 +139,7 @@ now incorporate QKD
 
 Here is an example Python code that uses quantum key distribution (QKD) to generate a new symmetric encryption key:
 
-```python
+`python
 
 import numpy as np
 
@@ -175,6 +177,7 @@ else:
 
 # Print the symmetric encryption key
 print(encryption_key)
+
 ```
 
 In this example, Alice and Bob generate two random qubit states and use them to create an entangled two-qubit state (QKD). Alice transmits the QKD state to Bob, who chooses a random measurement basis and measures his qubit in that basis. Alice and Bob compare their measurement bases and discard any results where they used different bases. They then use the remaining results to generate a symmetric encryption key using the secrets module, as in the previous example.
