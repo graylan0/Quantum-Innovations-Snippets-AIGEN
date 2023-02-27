@@ -142,6 +142,10 @@ now incorporate QKD
 
 Here is an example Python code that uses quantum key distribution (QKD) to generate a new symmetric encryption key:
 
+```
+
+
+```
 `python
 
 import numpy as np
