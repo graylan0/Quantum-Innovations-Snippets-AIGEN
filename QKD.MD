@@ -158,6 +158,7 @@ q1 = np.sqrt(1 - q0**2)
 QKD = np.outer(np.array([q0, q1]), np.array([q0, q1])) + np.outer(np.array([q1, q0]), np.array([q1, q0]))
 
 # Transmit the two-qubit state from Alice to Bob
+bob_state = np.dot(QKD, alice_state)
 
 # Bob chooses a random measurement basis
 basis = np.random.choice(['X', 'Z'])
@@ -169,7 +170,15 @@ else:
     result = np.random.choice(['0', '1'], p=[0.5, 0.5], size=2)
 
 # Alice and Bob compare their measurement bases
+
+# Alice and Bob compare their measurement bases
 # Discard results where they used different bases
+indices = [i for i in range(len(bob_bases)) if bob_bases[i] == alice_bases[i]]
+
+# Filter the measurement results based on the agreed-upon indices
+bob_results = bob_results[indices]
+alice_results = alice_results[indices]
+
 if basis == 'X':
     key = result[0] == result[1]
 else:
