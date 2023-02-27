@@ -170,8 +170,6 @@ else:
     result = np.random.choice(['0', '1'], p=[0.5, 0.5], size=2)
 
 # Alice and Bob compare their measurement bases
-
-# Alice and Bob compare their measurement bases
 # Discard results where they used different bases
 indices = [i for i in range(len(bob_bases)) if bob_bases[i] == alice_bases[i]]
 
