@@ -118,7 +118,9 @@ print(text)
 ```
 This code defines a problem Hamiltonian and coupling Hamiltonian based on the parameters of the GPT-Neo model. It then uses a D-Wave quantum annealer to sample from the binary quadratic model (BQM) defined by the Hamiltonians. The most common solution from the samples is used to update the GPT-Neo parameters, and new text is generated with the updated model. This process can be repeated iteratively to further fine-tune the parameters of the model.
 
-provide python snippet for Quantum Gradient Descent  ideas and the other listed 5 to improve OpenAI Davinci
+
+___________________________________
+DAO Democracy:provide python snippet for Quantum Gradient Descent  ideas and the other listed 5 to improve OpenAI Davinci
 
 Sure! Here's an example Python code snippet for implementing a quantum-inspired gradient descent algorithm to optimize the parameters of the Davinci3 model:
 ```
