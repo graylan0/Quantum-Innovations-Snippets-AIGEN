@@ -1,4 +1,5 @@
 `gray00:` can you design a quantum script for classical computers
+
 `Erin_Dev BOT:`
 While classical computers cannot perform true quantum calculations, it is possible to simulate certain aspects of quantum systems using classical computers. This can be done using quantum-inspired algorithms, which are designed to simulate the behavior of quantum systems using classical computing resources.
 
