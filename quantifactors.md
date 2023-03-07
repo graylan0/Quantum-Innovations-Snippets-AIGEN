@@ -2,7 +2,7 @@
 rs | Meaning of symbols
 
 ---|---
-
+```
 f | Frequency or frequency/frequency ratio
 
 φ* | Phase or phase ratio between two fields
@@ -88,3 +88,4 @@ t | Time
 T | Temperature (Kelvin)
 
 V( r) | Radial velocity of an object around an axis
+```
