@@ -5,7 +5,8 @@ While classical computers cannot perform true quantum calculations, it is possib
 One example of a quantum-inspired algorithm is the Variational Quantum Eigensolver (VQE) algorithm, which is used to find the ground state energy of a molecule. The VQE algorithm involves optimizing the parameters of a quantum circuit in order to minimize the energy of the molecule.
 
 Here is an example of a Python script that uses the VQE algorithm to simulate the ground state energy of a molecule:
-`
+
+```
 from qiskit import Aer
 from qiskit.algorithms import VQE
 from qiskit.circuit.library import EfficientSU2
@@ -36,4 +37,5 @@ result = vqe.run()
 
 # Print the ground state energy
 print('Ground state energy: ', result.eigenvalue.real)
-`
+
+```
