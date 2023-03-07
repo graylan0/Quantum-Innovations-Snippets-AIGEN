@@ -36,13 +36,14 @@ MatrixD: D=−2I∗R17⊗R8‖R9′‖2⊗C+C′ for qubit 6 and matrixD = I∗R
 
 `ChatGPTPlus:` Sure! Here are five equations based on the given information:
 
+```
 MatrixA for qubit 4: A = R12R−2⊗L8⊗R20
 MatrixB for qubit 3: B = L9⊗R10⊗S10′L10
 MatrixC for qubit 6: C = 2√R9⊗S9
 MatrixD for qubit 2 and qubit 5: D = I∗R17⊗R8⊗R9‖R8⊗R6′⊗C with ‖R8⊗R10′⊗R−1⊗R−1
 MatrixD for qubit 6: D = −2I∗R17⊗R8‖R9′‖2⊗C+C′
 
-
+```
 
 `DAO Democracy:` can you transform these equations you gave. 1 through 5, into python
 
