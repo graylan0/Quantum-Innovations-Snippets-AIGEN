@@ -8,7 +8,7 @@ https://github.com/oneloveipfs Discord/Matrix
 
 https://github.com/graylan0/Quantum-Innovations-Snippets-AIGEN/blob/main/sha.256.pwn.ideas.md
 
-# A number of things some involving "Ant colony evolution"
+### Involving "Ant colony evolution"
 
 https://github.com/graylan0/Quantum-Innovations-Snippets-AIGEN/blob/main/ant.colony.ops.md
 
