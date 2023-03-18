@@ -1,7 +1,8 @@
 Model: GPT-4
 
-DAO Democracy
-can you keep the time more efficiently? and encode the time into 0-6000 position around the sun
+`DAO Democracy
+can you keep the time more efficiently? and encode the time into 0-6000 position around the sun`
+`
 To encode the time using a 0-6000 scale based on Earth's position around the Sun, we'll first need to understand how this representation works. Assuming the 0-6000 scale represents Earth's position in its orbit around the Sun over the course of a year, we can map the time of the year onto this scale.
 
 First, let's consider that Earth takes approximately 365.25 days to complete one orbit around the Sun. To map this onto a 0-6000 scale, we can divide 6000 by 365.25 to get the number of units per day:
