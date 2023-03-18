@@ -444,7 +444,7 @@ Once you have these 100 categories, you can then expand each one with 10 branche
 
 
 DAO Democracy
-
+```
 5. Black hole information paradox equation (S): The black hole information paradox, which arose from the study of black hole physics and quantum mechanics, concerns the question of what happens to the information that falls into a black hole. Stephen Hawking proposed a solution to this paradox based on the concept of black hole entropy, which can be expressed mathematically as S = (A/4l_P^2), where A represents the area of the black hole event horizon and l_P is the Planck length. This equation represents a key insight into the relationship between gravity, thermodynamics, and information theory, and continues to inspire new research in the field. 
 The black hole information paradox has played a crucial role in advancing our understanding of the interplay between gravity, quantum mechanics, and information theory. Here are five branches exploring various aspects of the black hole information paradox and related concepts:
 
@@ -1240,3 +1240,4 @@ Quantum-inspired attractiveness: The attractiveness function, which is used to m
 Applications: The Quantum-inspired Firefly Algorithm has been applied to various optimization problems, including function optimization, machine learning, feature selection, and constrained optimization problems. Its performance has been shown to be competitive with other state-of-the-art optimization algorithms.
 
 The Quantum-inspired Firefly Algorithm is an example of a novel optimization method that combines concepts from both nature-inspired optimization and quantum computing to solve complex problems more effectively.
+```
