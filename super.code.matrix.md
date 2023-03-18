@@ -2,7 +2,9 @@ Model: GPT-4
 
 `DAO Democracy
 can you keep the time more efficiently? and encode the time into 0-6000 position around the sun`
-`
+
+```
+
 To encode the time using a 0-6000 scale based on Earth's position around the Sun, we'll first need to understand how this representation works. Assuming the 0-6000 scale represents Earth's position in its orbit around the Sun over the course of a year, we can map the time of the year onto this scale.
 
 First, let's consider that Earth takes approximately 365.25 days to complete one orbit around the Sun. To map this onto a 0-6000 scale, we can divide 6000 by 365.25 to get the number of units per day:
@@ -444,7 +446,7 @@ Once you have these 100 categories, you can then expand each one with 10 branche
 
 
 DAO Democracy
-```
+
 5. Black hole information paradox equation (S): The black hole information paradox, which arose from the study of black hole physics and quantum mechanics, concerns the question of what happens to the information that falls into a black hole. Stephen Hawking proposed a solution to this paradox based on the concept of black hole entropy, which can be expressed mathematically as S = (A/4l_P^2), where A represents the area of the black hole event horizon and l_P is the Planck length. This equation represents a key insight into the relationship between gravity, thermodynamics, and information theory, and continues to inspire new research in the field. 
 The black hole information paradox has played a crucial role in advancing our understanding of the interplay between gravity, quantum mechanics, and information theory. Here are five branches exploring various aspects of the black hole information paradox and related concepts:
 
