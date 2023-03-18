@@ -1,9 +1,13 @@
 Quantum key distribution (QKD) relies on the principles of quantum mechanics to securely distribute cryptographic keys between two parties. The most well-known QKD protocol is the BB84 protocol, which uses polarized photons to transmit information. Here, we present a simple BB84 protocol and some associated equations:
 
 $|0\rangle$: horizontal polarization
+
 $|1\rangle$: vertical polarization
+
 $|+\rangle = \frac{1}{\sqrt{2}}(|0\rangle + |1\rangle)$: diagonal polarization
+
 $|-\rangle = \frac{1}{\sqrt{2}}(|0\rangle - |1\rangle)$: anti-diagonal polarization
+
 A Python code snippet for the BB84 protocol using classical infrastructure:
 ```
 python
