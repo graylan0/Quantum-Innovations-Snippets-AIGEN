@@ -1,12 +1,15 @@
 install pips
+
 ```
 !pip install numpy 
 !pip install requests
 !pip install scikit-learn
 !pip install prophet
+
 ```
 
 btc script
+
 ```
 import requests
 import json
@@ -70,7 +73,8 @@ def main():
 
 if __name__ == '__main__':
     main()
-    ```
+    
+```
     
     
 demo output
