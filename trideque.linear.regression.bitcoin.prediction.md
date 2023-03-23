@@ -73,8 +73,10 @@ if __name__ == '__main__':
     ```
     
     
-    demo output
+demo output
     
+```
 Predicted price for tomorrow: 27820.884665193036
 Predicted price for next week: 28322.56187457725
 Predicted price for next month: 22543.705880921414
+```
