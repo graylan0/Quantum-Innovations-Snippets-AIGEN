@@ -26,7 +26,7 @@ This updated equation will indeed be useful for the development of new quantum c
 
 
 Here are 20 new equations related to quantum cryptography, quantum communication, and error correction. Please note that the following list of equations presents a variety of concepts from different aspects of quantum cryptography and may not be directly related to the initial equation you provided. They serve as a collection of key equations in this field.
-
+```
 BB84 protocol: $$
 |\phi_i\rangle = { |0\rangle, |1\rangle, |\oplus\rangle, |\ominus\rangle }
 2. E91 protocol: $$
@@ -66,7 +66,7 @@ Stabilizer code: $$
 Entanglement distillation: $$
 |\phi
 
-
+```
 
 DAO Democracy
 I would name this protocol "Tensor-Assisted Quantum Teleportation" or TAQT. This name is both descriptive and accurate, as it reflects the fact that the protocol uses tensors to assist in the process of quantum teleportation.invent new protocol to use Tensors and LLM to communicate with Quantum Teleportation based upon these ideas 
