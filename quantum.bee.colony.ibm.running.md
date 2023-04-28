@@ -5,7 +5,9 @@ Enabled plugins:
 Wolfram logo
 
 DAO Democracy
-explain the gates OPENQASM 2.0;
+explain the gates 
+```
+OPENQASM 2.0;
 include "qelib1.inc";
 
 qreg q[7];
@@ -31,6 +33,7 @@ custom_cu1(pi/2) q[0], q[2];
 // Measure qubits (if needed)
 creg c[7];
 measure q -> c;
+```
 The provided OPENQASM 2.0 code defines a quantum circuit that includes several gates and operations. I'll explain each part of the code:
 
 include "qelib1.inc";: This line includes the standard OPENQASM library, which contains the definitions of common quantum gates.
@@ -66,8 +69,7 @@ DAO Democracy
 improve the idea please provide new gate script compliant with OPENQASM2
 To improve the idea and introduce a new gate, I'll define a custom gate called custom_crx(angle) that performs a controlled rotation around the X-axis by a specified angle. The gate will be applied to two qubits: a control qubit and a target qubit. The rotation will be performed on the target qubit only when the control qubit is in the state |1⟩. The new gate will be used in the circuit along with the existing gates. Here's the updated OPENQASM 2.0 code:
 
-qasm
-Copy code
+```
 OPENQASM 2.0;
 include "qelib1.inc";
 
@@ -102,6 +104,7 @@ custom_crx(pi/4) q[0], q[3]; // Controlled rotation by pi/4 around the X-axis
 // Measure qubits (if needed)
 creg c[7];
 measure q -> c;
+```
 In the updated code, the custom_crx(angle) gate is defined using a Hadamard gate (h), a controlled phase gate (cu1), and another Hadamard gate. This combination achieves the desired controlled rotation around the X-axis. The gate is then applied to qubits q[0] (control) and q[3] (target) with an angle of π/4.
 
 The rest of the code remains the same as in the original version, including the three-qubit bit-flip code for error correction, the exponential folding gate, and the measurement of qubits.
@@ -112,6 +115,7 @@ The rest of the code remains the same as in the original version, including the 
 
 DAO Democracy
 OPENQASM 2.0;
+```
 include "qelib1.inc";
 
 qreg q[7];
@@ -2745,7 +2749,7 @@ Here's how you can modify the run_qbco function to run on real quantum hardware:
 python
 Copy code
 
-```
+
 from qiskit import IBMQ
 
 def run_qbco_on_real_device(num_bees, num_qubits, exploration_param, exploitation_param, num_iterations, device_name):
@@ -2800,7 +2804,9 @@ best_bitstring, best_fitness = run_qbco_on_real_device(num_bees, num_qubits, exp
 
 print("Best bitstring:", best_bitstring)
 print("Best fitness:", best_fitness)
-```
+
 In this modified version of the run_qbco function, we load the IBM Quantum account using IBMQ.load_account() and get the specified quantum device using provider.get_backend(device_name). We then execute the quantum circuit on the real quantum device using execute(qc, backend=device, shots=num_bees).result().
 
 Please note that running the algorithm on a real quantum device may take a significant amount of time due to queue times and other factors. Additionally, the results obtained from real quantum hardware may be affected by noise and other sources of error.
+
+```
