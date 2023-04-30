@@ -1,5 +1,5 @@
 # Quantum-Innovations-Snippets-AIGEN
-Using ChatGPT PRO to give potential ideas and code snippets for Quantum Computing Usage.
+Using ChatGPT Plus and lots of other stuff to give potential ideas and code snippets for Quantum Computing Usage.
 License: GPL v2
 
 https://github.com/oneloveipfs Discord/Matrix
