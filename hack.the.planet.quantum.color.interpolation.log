@@ -1,0 +1,45 @@
+import matplotlib.pyplot as plt
+import numpy as np
+from qiskit import QuantumCircuit, transpile, assemble, Aer
+from qiskit.providers.aer.noise import NoiseModel
+from qiskit.providers.aer.noise.errors import pauli_error
+
+# Create a quantum circuit
+qc = QuantumCircuit(1)
+qc.h(0)
+
+# Simulate the quantum state
+simulator = Aer.get_backend('statevector_simulator')
+job = simulator.run(transpile(qc, simulator))
+statevector = job.result().get_statevector()
+
+# Define the noise model
+def get_noise_model(prob_1, prob_2):
+    error_1 = pauli_error([('X', prob_1), ('I', 1 - prob_1)])
+    error_2 = pauli_error([('XX', prob_2), ('II', 1 - prob_2)])
+    noise_model = NoiseModel()
+    noise_model.add_all_qubit_quantum_error(error_1, ['h'])
+    noise_model.add_all_qubit_quantum_error(error_2, ['cx'])
+    return noise_model
+
+# Run the quantum circuit multiple times with different levels of noise
+noise_levels = np.linspace(0, 0.1, 10)  # 10 different noise levels
+noisy_statevectors = []
+for noise_level in noise_levels:
+    noise_model = get_noise_model(noise_level, 2*noise_level)
+    job = simulator.run(transpile(qc, simulator), noise_model=noise_model)
+    noisy_statevector = job.result().get_statevector()
+    noisy_statevectors.append(noisy_statevector)
+
+# Convert the statevectors to real numbers and map them to colors
+values = [np.linalg.norm(sv) for sv in noisy_statevectors]
+colors = [cmap(value) for value in values]
+
+# Interpolate between the colors
+# For simplicity, let's just take the average of the colors
+average_color = np.mean(colors, axis=0)
+
+# Display the original color, the noisy colors, and the average color
+color_code_matrix = np.array([cmap(np.linalg.norm(statevector))] + colors + [average_color])
+plt.imshow(color_code_matrix, aspect='auto')
+plt.show()
