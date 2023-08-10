@@ -1,10 +1,10 @@
-Privacy Policy for BrainTracker (Android Version)
+# Privacy Policy for BrainTracker (Android Version)
 Last updated: AUG 10TH 2023
 
 Introduction
 BrainTracker ("we", "our", or "us") is committed to transparency regarding the collection and use of user data. This Privacy Policy explains how we collect, use, and disclose your information when you use our BrainTracker app ("the App") on the Android platform.
 
-# IMPORTANT NOTICE: All data collected through the App, including personal and conversational data, will be stored in a public repository and will be fully visible to the public. Please do not provide any information that you consider private or sensitive.
+## IMPORTANT NOTICE: All data collected through the App, including personal and conversational data, will be stored in a public repository and will be fully visible to the public. Please do not provide any information that you consider private or sensitive.
 
 Please read this Privacy Policy carefully. If you do not agree with the terms of this Privacy Policy, please do not access or use the App.
 
